@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>피카츄 애니메이션</title>
+
+<style>
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        filter:drop-shadow(10px 5px 5px);
+        font-size: 45px;
+    }
+    div {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .filter-transition {
+        transition: all 0.8s;
+    }
+
+    .larger {
+        transition: all 0.8s;
+        margin-left: 20%;
+    }
+
+    .larger:hover {
+        transform: scale(2.5);
+        filter: brightness(0.5) contrast(1);
+        opacity: 1;
+    }
+
+    .larger:active {
+        filter: contrast(0.5);
+        opacity: 0.5; 
+    }
+
+    .spin {
+        margin-left: 15%;
+        transition: all 1.5s;
+    }
+    .spin:hover {
+        transform: rotate(360deg) scale(2.2);
+        filter: hue-rotate(40deg);
+    }
+    .spin:active {
+        filter: hue-rotate(40deg) drop-shadow(10px 10px 10px green);
+    }
+    .scare {
+        margin-left: 15%;
+        transition: all 1.5s;
+    }
+    .scare:hover {
+        transform: scale(2.2);
+        filter: invert(100%);
+    }
+    .scare:active {
+        filter: invert(100%) blur(5px);
+    }
+</style>
+
+</head>
+
+<body>
+    <h1>마우스를 올리고 클릭해보세요</h1>
+    <div class = "larger"><img src="img/피츄.gif" height="100px"></div>
+    <div class="spin"><img src="img/피카츄.gif" height="100px"></div>
+    <div class="scare"><img src="img/라이츄.gif" height="130px"></div>
+</body>
+
+</html>
+            

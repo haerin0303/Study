@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>간단 체스판</title>
+<style>
+    div{
+        display: inline-block;
+        background-image: url(img/Chess_Pieces_Sprite.svg);
+        width: 60px;
+        height: 60px;
+        background-repeat:no-repeat;
+        background-size: auto 200%;
+        transition: 0.3s;
+    }
+    .bg-brown{
+        background-color: brown;
+    }
+    .bg-wheat{
+        background-color: wheat;
+    }
+    .a{
+        background-position: 80% 100%;
+    }
+    .b{
+        background-position: 60% 100%;
+    }
+    .c{
+        background-position: 40% 100%;
+    }
+    .d{
+        background-position: 20% 100%;
+    }
+    .e{
+        background-position: 0% 100%;
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+        width: 100vh;
+    }
+    .f{
+        background-position: 100% 100%;
+    }
+    .g{
+        background-position: 100% 0%;
+    }
+    span{
+        width: 60px;
+        height: 60px;
+    }
+    .h{
+        background-position-y: 0%;
+    }
+    div:hover{
+        background-position-y: 0%;
+        background-color: gray;
+    }
+    span:hover{
+        background-color: gray;
+    }
+    span{
+        transition: 0.3s;
+    }
+    b{
+        display: inline-block;
+        background-image: url(img/Chess_Pieces_Sprite.svg);
+        width: 60px;
+        height: 60px;
+        background-repeat:no-repeat;
+        background-size: auto 200%;
+        transition: 0.3s;
+    }
+    b:hover{
+        background-color: gray;
+        background-position-y: 100%;
+    }
+</style>
+</head>
+
+<body>
+    <a class="flex">
+        <div class="a bg-brown"></div>
+        <div class="b bg-wheat"></div>
+        <div class="c bg-brown"></div>
+        <div class="d bg-wheat"></div>
+        <div class="e bg-brown"></div>
+        <div class="c bg-wheat"></div>
+        <div class="b bg-brown"></div>
+        <div class="a bg-wheat"></div>
+    </a>
+    <a class="flex">
+        <div class="f bg-wheat"></div>
+        <div class="f bg-brown"></div>
+        <div class="f bg-wheat"></div>
+        <div class="f bg-brown"></div>
+        <div class="f bg-wheat"></div>
+        <div class="f bg-brown"></div>
+        <div class="f bg-wheat"></div>
+        <div class="f bg-brown"></div>
+    </a>
+    <a class="flex">
+        <span class="bg-brown"></span>
+        <span class="bg-wheat"></span>
+        <span class="bg-brown"></span>
+        <span class="bg-wheat"></span>
+        <span class="bg-brown"></span>
+        <span class="bg-wheat"></span>
+        <span class="bg-brown"></span>
+        <span class="bg-wheat"></span>
+    </a>
+    <a class="flex">
+        <span class="bg-wheat"></span>
+        <span class="bg-brown"></span>
+        <span class="bg-wheat"></span>
+        <span class="bg-brown"></span>
+        <span class="bg-wheat"></span>
+        <span class="bg-brown"></span>
+        <span class="bg-wheat"></span>
+        <span class="bg-brown"></span>
+    </a>
+    <a class="flex">
+        <span class="bg-brown"></span>
+        <span class="bg-wheat"></span>
+        <span class="bg-brown"></span>
+        <span class="bg-wheat"></span>
+        <span class="bg-brown"></span>
+        <span class="bg-wheat"></span>
+        <span class="bg-brown"></span>
+        <span class="bg-wheat"></span>
+    </a>
+    <a class="flex">
+        <span class="bg-wheat"></span>
+        <span class="bg-brown"></span>
+        <span class="bg-wheat"></span>
+        <span class="bg-brown"></span>
+        <span class="bg-wheat"></span>
+        <span class="bg-brown"></span>
+        <span class="bg-wheat"></span>
+        <span class="bg-brown"></span>
+    </a>
+    <a class="flex">
+        <b class="f bg-brown g"></b>
+        <b class="f bg-wheat g"></b>
+        <b class="f bg-brown g"></b>
+        <b class="f bg-wheat g"></b>
+        <b class="f bg-brown g"></b>
+        <b class="f bg-wheat g"></b>
+        <b class="f bg-brown g"></b>
+        <b class="f bg-wheat g"></b>
+    </a>
+    <a class="flex">
+        <b class="a bg-wheat h"></b>
+        <b class="b bg-brown h"></b>
+        <b class="c bg-wheat h"></b>
+        <b class="d bg-brown h"></b>
+        <b class="e bg-wheat h"></b>
+        <b class="c bg-brown h"></b>
+        <b class="b bg-wheat h"></b>
+        <b class="a bg-brown h"></b>
+    </a>
+</body>
+
+</html>
+            
